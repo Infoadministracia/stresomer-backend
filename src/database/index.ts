@@ -1,11 +1,9 @@
-import { defineDatabaseConfig } from '@strapi/types';
-
-export default defineDatabaseConfig(({ env }) => ({
+export default () => ({
   connection: {
     client: 'sqlite',
     connection: {
-      filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+      filename: '.tmp/data.db',
     },
     useNullAsDefault: true,
   },
-}));
+});
