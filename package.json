@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
-  "scripts": {
-  "build": "strapi build && npm run copy-config",
+ "scripts": {
+  "build": "strapi build && mkdir -p build/config && cp -r config/* build/config",
   "copy-config": "cp -r config build/config",
     "console": "strapi console",
     "deploy": "strapi deploy",
