@@ -1,3 +1,3 @@
 module.exports = {
-  keys: ['mySuperSecretKeyA', 'mySuperSecretKeyB'],
+  keys: ['myKeyA', 'myKeyB'],
 };
